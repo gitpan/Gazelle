@@ -64,11 +64,11 @@
    "provides" : {
       "Gazelle" : {
          "file" : "lib/Gazelle.pm",
-         "version" : "0.02"
+         "version" : "0.03"
       },
       "Plack::Handler::Gazelle" : {
          "file" : "lib/Plack/Handler/Gazelle.pm",
-         "version" : "0.02"
+         "version" : "0.03"
       }
    },
    "release_status" : "stable",
@@ -82,7 +82,7 @@
          "web" : "https://github.com/kazeburo/Gazelle"
       }
    },
-   "version" : "0.02",
+   "version" : "0.03",
    "x_authority" : "cpan:KAZEBURO",
    "x_contributors" : [
       "mattn <mattn.jp@gmail.com>"

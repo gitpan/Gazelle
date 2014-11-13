@@ -8,13 +8,9 @@ lib/Gazelle.pm
 lib/Plack/Handler/Gazelle.pm
 lib/Plack/Handler/Gazelle.xs
 minil.toml
-picohttpparser/Makefile
-picohttpparser/README.md
-picohttpparser/bench.c
 picohttpparser/picohttpparser.c
 picohttpparser/picohttpparser.h
 picohttpparser/test.c
-picohttpparser/test_response.c
 ppport.h
 t/00_compile.t
 t/01_plack_test.t
