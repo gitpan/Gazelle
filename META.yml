@@ -10,7 +10,7 @@ build_requires:
 configure_requires:
   Module::Build::Tiny: '0.035'
 dynamic_config: 0
-generated_by: 'Minilla/v1.1.0, CPAN::Meta::Converter version 2.141170'
+generated_by: 'Minilla/v2.2.1, CPAN::Meta::Converter version 2.141170'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -29,10 +29,10 @@ no_index:
 provides:
   Gazelle:
     file: lib/Gazelle.pm
-    version: '0.03'
+    version: '0.04'
   Plack::Handler::Gazelle:
     file: lib/Plack/Handler/Gazelle.pm
-    version: '0.03'
+    version: '0.04'
 requires:
   Guard: '0'
   Parallel::Prefork: '0'
@@ -46,7 +46,8 @@ resources:
   bugtracker: https://github.com/kazeburo/Gazelle/issues
   homepage: https://github.com/kazeburo/Gazelle
   repository: git://github.com/kazeburo/Gazelle.git
-version: '0.03'
+version: '0.04'
 x_authority: cpan:KAZEBURO
 x_contributors:
   - 'mattn <mattn.jp@gmail.com>'
+  - 'bayashi <bayashi@cpan.org>'
