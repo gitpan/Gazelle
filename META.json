@@ -57,18 +57,19 @@
             "HTTP::Request::Common" : "0",
             "Plack::Test" : "0",
             "Plack::Test::Suite" : "0",
-            "Test::More" : "0.98"
+            "Test::More" : "0.98",
+            "Test::TCP" : "2"
          }
       }
    },
    "provides" : {
       "Gazelle" : {
          "file" : "lib/Gazelle.pm",
-         "version" : "0.04"
+         "version" : "0.05"
       },
       "Plack::Handler::Gazelle" : {
          "file" : "lib/Plack/Handler/Gazelle.pm",
-         "version" : "0.04"
+         "version" : "0.05"
       }
    },
    "release_status" : "stable",
@@ -82,7 +83,7 @@
          "web" : "https://github.com/kazeburo/Gazelle"
       }
    },
-   "version" : "0.04",
+   "version" : "0.05",
    "x_authority" : "cpan:KAZEBURO",
    "x_contributors" : [
       "mattn <mattn.jp@gmail.com>",
