@@ -1,11 +1,9 @@
 package Plack::Handler::Gazelle;
 
-use 5.008005;
+use 5.008001;
 use strict;
 use warnings;
-use Carp ();
 use IO::Socket::INET;
-use List::Util qw(max sum);
 use Plack::Util;
 use Stream::Buffered;
 use POSIX qw(EINTR EAGAIN EWOULDBLOCK);
@@ -13,12 +11,9 @@ use Socket qw(IPPROTO_TCP TCP_NODELAY);
 use Parallel::Prefork;
 use Server::Starter ();
 use Try::Tiny;
-use Time::HiRes qw(time);
 use Guard;
-use HTTP::Status;
-use HTTP::Date;
 
-our $VERSION = "0.06";
+our $VERSION = "0.07";
 
 use XSLoader;
 XSLoader::load(__PACKAGE__, $VERSION);

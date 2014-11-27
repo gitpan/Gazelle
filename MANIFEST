@@ -15,6 +15,7 @@ t/02_graceful.t
 t/03_multibyte_header.t
 t/04_server_header.t
 t/05_harakiri.t
+t/06_header.t
 picohttpparser/Makefile
 picohttpparser/README.md
 picohttpparser/bench.c
