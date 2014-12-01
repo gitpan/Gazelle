@@ -1,5 +1,6 @@
 /*
- * Copyright (c) 2009-2014 Kazuho Oku, Tokuhiro Matsuno, Daisuke Murase
+ * Copyright (c) 2009-2014 Kazuho Oku, Tokuhiro Matsuno, Daisuke Murase,
+ *                         Shigeo Mitsunari
  *
  * The software is licensed under either the MIT License (below) or the Perl
  * license.
@@ -40,7 +41,7 @@ int main(void)
   size_t num_headers;
   int i, ret;
   
-  for (i = 0; i < 1000000; i++) {
+  for (i = 0; i < 10000000; i++) {
     num_headers = sizeof(headers) / sizeof(headers[0]);
     ret = phr_parse_request(REQ, sizeof(REQ) - 1, &method, &method_len, &path,
                             &path_len, &minor_version, headers, &num_headers,

@@ -1,5 +1,6 @@
 /*
- * Copyright (c) 2009-2014 Kazuho Oku, Tokuhiro Matsuno, Daisuke Murase
+ * Copyright (c) 2009-2014 Kazuho Oku, Tokuhiro Matsuno, Daisuke Murase,
+ *                         Shigeo Mitsunari
  *
  * The software is licensed under either the MIT License (below) or the Perl
  * license.
@@ -26,7 +27,7 @@
 #ifndef picohttpparser_h
 #define picohttpparser_h
 
-/* $Id: ccde49d386d67e7b5b662eeec25f28a1e1f5e969 $ */
+/* $Id: ee8c3a8d44d2b58b2ae66217c3783e242156c90a $ */
 
 #ifdef __cplusplus
 extern "C" {

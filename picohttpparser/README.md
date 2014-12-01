@@ -1,7 +1,7 @@
 PicoHTTPParser
 =============
 
-Copyright (c) 2009-2014 [Kazuho Oku](https://github.com/kazuho), [Tokuhiro Matsuno](https://github.com/tokuhirom), [Daisuke Murase](https://github.com/typester)
+Copyright (c) 2009-2014 [Kazuho Oku](https://github.com/kazuho), [Tokuhiro Matsuno](https://github.com/tokuhirom), [Daisuke Murase](https://github.com/typester), [Shigeo Mitsunari](https://github.com/herumi)
 
 PicoHTTPParser is a tiny, primitive, fast HTTP request/response parser.
 
@@ -17,8 +17,8 @@ The software is dual-licensed under the Perl License or the MIT License.
 Benchmark
 ---------
 
-![benchmark results](http://i.gyazo.com/7e098703c29128d69d02c9a216bfb6fb.png)
+![benchmark results](http://i.gyazo.com/a85c18d3162dfb46b485bb41e0ad443a.png)
 
-The benchmark code is from [fukamachi/fast-http](https://github.com/fukamachi/fast-http/).
+The benchmark code is from [fukamachi/fast-http@6b91103](https://github.com/fukamachi/fast-http/tree/6b9110347c7a3407310c08979aefd65078518478).
 
 The internals of picohttpparser has been described to some extent in [my blog entry]( http://blog.kazuhooku.com/2014/11/the-internals-h2o-or-how-to-write-fast.html).

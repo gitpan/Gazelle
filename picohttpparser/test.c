@@ -1,6 +1,7 @@
 /* use `make test` to run the test */
 /*
- * Copyright (c) 2009-2014 Kazuho Oku, Tokuhiro Matsuno, Daisuke Murase
+ * Copyright (c) 2009-2014 Kazuho Oku, Tokuhiro Matsuno, Daisuke Murase,
+ *                         Shigeo Mitsunari
  *
  * The software is licensed under either the MIT License (below) or the Perl
  * license.
@@ -97,6 +98,15 @@ static void test_request(void)
   ok(headers[2].name == NULL);
   ok(bufis(headers[2].value, headers[2].value_len, "  \tc"));
   
+  PARSE("GET / HTTP/1.0\r\nfoo : ab\r\n\r\n", 0, 0,
+        "parse header name with trailing space");
+  ok(num_headers == 1);
+  ok(bufis(method, method_len, "GET"));
+  ok(bufis(path, path_len, "/"));
+  ok(minor_version == 0);
+  ok(bufis(headers[0].name, headers[0].name_len, "foo "));
+  ok(bufis(headers[0].value, headers[0].value_len, "ab"));
+
   PARSE("GET", 0, -2, "incomplete 1");
   ok(method == NULL);
   PARSE("GET ", 0, -2, "incomplete 2");
@@ -125,6 +135,8 @@ static void test_request(void)
   PARSE("GET /\x7fhello HTTP/1.0\r\n\r\n", 0, -1, "DEL in uri-path");
   PARSE("GET / HTTP/1.0\r\na\0b: c\r\n\r\n", 0, -1, "NUL in header name");
   PARSE("GET / HTTP/1.0\r\nab: c\0d\r\n\r\n", 0, -1, "NUL in header value");
+  PARSE("GET / HTTP/1.0\r\na\033b: c\r\n\r\n", 0, -1, "CTL in header name");
+  PARSE("GET / HTTP/1.0\r\nab: c\033\r\n\r\n", 0, -1, "CTL in header value");
   PARSE("GET /\xa0 HTTP/1.0\r\nh: c\xa2y\r\n\r\n", 0, 0, "accept MSB chars");
   ok(num_headers == 1);
   ok(bufis(method, method_len, "GET"));
