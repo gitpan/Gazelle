@@ -64,11 +64,11 @@
    "provides" : {
       "Gazelle" : {
          "file" : "lib/Gazelle.pm",
-         "version" : "0.10"
+         "version" : "0.11"
       },
       "Plack::Handler::Gazelle" : {
          "file" : "lib/Plack/Handler/Gazelle.pm",
-         "version" : "0.10"
+         "version" : "0.11"
       }
    },
    "release_status" : "stable",
@@ -82,10 +82,11 @@
          "web" : "https://github.com/kazeburo/Gazelle"
       }
    },
-   "version" : "0.10",
+   "version" : "0.11",
    "x_authority" : "cpan:KAZEBURO",
    "x_contributors" : [
       "mattn <mattn.jp@gmail.com>",
-      "bayashi <bayashi@cpan.org>"
+      "bayashi <bayashi@cpan.org>",
+      "Syohei YOSHIDA <syohex@gmail.com>"
    ]
 }
